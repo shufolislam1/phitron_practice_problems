@@ -16,12 +16,12 @@ int main()
     }
     if (sum < 0)
     {
-        int newSum = sum * (-1);
-        printf("%d\n", newSum);
+        long long int newSum = sum * (-1);
+        printf("%lld\n", newSum);
     }
     else
     {
-        printf("%d\n", sum);
+        printf("%lld\n", sum);
     }
 
     return 0;
