@@ -9,25 +9,15 @@ int main()
         scanf("%d", &arr[i]);
     }
     scanf("%d", &x);
+    int ans = -1;
     for (int j = 0; j < n; j++)
     {
         if (arr[j] == x)
         {
-            flag = 1;
+            ans = j;
             break;
         }
-        else
-        {
-            printf("-1\n");
-        }
     }
-    if (flag == 1)
-    {
-        // printf("%d\n", arr[j]);
-    }
-    else
-    {
-        printf("-1\n");
-    }
+    printf("%d\n", ans);
     return 0;
 }
